@@ -39,9 +39,6 @@ router.post('/upload-file', async (req, res) => {
             }
             for(var e = 0 ; e < wrap.restrictedUrls.length; e++){
                 if(!isInfected){
-                    console.log('====== fixedUrl1 '+fixedUrl1);
-                    console.log('====== fixedUrl2 '+fixedUrl2);
-                    console.log('====== wrap.restrictedUrls[e] '+wrap.restrictedUrls[e]);
                     if(fixedUrl1 === wrap.restrictedUrls[e] || fixedUrl2 === wrap.restrictedUrls[e]){
                         console.log('==== INFECTED');
                         var isInfected = true;
